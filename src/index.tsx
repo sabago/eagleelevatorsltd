@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
+import { Router, BrowserRouter } from 'react-router-dom';
 
 // let express = require('express');
 // let router = express.Router();
@@ -67,9 +68,12 @@ import 'mdbreact/dist/css/mdb.css';
 // app.listen(3000)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    < App />
+  </BrowserRouter>, 
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
@@ -77,4 +81,5 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
 
