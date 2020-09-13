@@ -13,8 +13,7 @@ function App() {
       <React.StrictMode>
         <Router>
           <Navigation />
-          <Routes />
-          <Home />         
+          <Routes />        
         </Router> 
     </React.StrictMode>
     </div>

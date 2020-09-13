@@ -19,7 +19,7 @@ export default class Routes extends React.Component {
         return (
             <Router history={history}>
                 <Switch>
-                    <Route exact path="/" component={Home}/>
+                    <Route exact path="" component={Home}/>
                     <Route path="/about-us" component={About} />
                     <Route path="/services" component={Services} />
                     <Route path="/clients" component={Clients} />
