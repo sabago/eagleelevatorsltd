@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, useHistory } from 'react-router-dom';
+import { HashRouter as Router, useHistory } from 'react-router-dom';
 
 import Routes from './routes';
 import { Navigation } from './components/navigation/index';
