@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { withRouter } from 'react-router-dom';
 
 // import About from "./About/About";
@@ -17,7 +17,7 @@ import { Contact } from "./components/contact-us";
 export default class Routes extends React.Component {
     render() {
         return (
-            <Router history={history}>
+            <BrowserRouter basename="/">
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/about-us" component={About} />
@@ -26,7 +26,7 @@ export default class Routes extends React.Component {
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact-us" component={Contact} />
                 </Switch>
-            </Router>
+            </BrowserRouter>
         );
     }
 }
