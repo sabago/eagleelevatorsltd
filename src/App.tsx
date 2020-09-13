@@ -5,6 +5,7 @@ import { BrowserRouter as Router, useHistory } from 'react-router-dom';
 
 import Routes from './routes';
 import { Navigation } from './components/navigation/index';
+import { Home } from './components/home';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <React.StrictMode>
         <Router>
           <Navigation />
-          <Routes />         
+          <Routes />
+          <Home />         
         </Router> 
     </React.StrictMode>
     </div>
