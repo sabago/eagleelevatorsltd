@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <React.StrictMode>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Navigation />
           <Routes />        
         </Router> 
