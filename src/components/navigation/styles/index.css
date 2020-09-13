@@ -1,0 +1,95 @@
+/* .mynav {
+    background-color: aliceblue !important;
+    color: red;
+}
+
+:local(.navbar) {
+    background:#2E5F91;
+    color:white !important;
+  }
+  
+:local(.navitem) {
+color:white;
+} */
+
+#whynow {
+    background-image: none;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between !important;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: rgba(256, 256, 256, 1);
+   }
+
+#phone-menu {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    float: right;
+    align-items: flex-end;
+}
+#nav-contact {
+    color: #1d3750;
+    font-weight: 400;
+}
+#menu {
+    font-size:20px;
+}
+
+#menu-link {
+    color: #161831;
+    font-weight: 500;
+}
+
+#name-main {
+    color: #161831;
+    font-size: 30px;
+    padding: 0px;
+    font-weight: 500;
+}
+
+#name-ltd {
+    font-size: 20px;
+    padding: 0px;
+    color: #1d3750;
+    font-weight: 400;
+}
+
+#logo-name {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100px;
+    padding-top: 15px;
+}
+
+/* .material-icons {
+    display: inline-flex;
+    vertical-align: top;
+    vertical-align: middle;
+} */
+/* .navbar-brand > .navbar-text {
+    color: white;
+}
+
+
+
+.navbar-brand-name {
+
+    /* display: inline-block; */
+    /* float: left;
+    margin: 0px;
+  }
+  
+  .navbar-brand-name > img { */
+    /* display: inline; */
+    /* float: left;
+    padding: 0 15px 0 0;
+  } */

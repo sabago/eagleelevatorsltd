@@ -1,0 +1,65 @@
+.clients-container {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    /* min-width: 100px; */
+}
+.clients-row {
+    width: 100%;
+    /* max-width: 100%;
+    min-width: 0; */
+    overflow-x: auto;  
+    white-space: nowrap; 
+    padding-bottom: 10px;
+    
+    /* color: black; */
+}
+
+.clients-col {
+    display: inline-block;
+    float: none;
+    min-width: 355px;
+    /* color: black; */
+}
+
+@media (min-width: 900px) {
+    /*was at 992px*/
+    .clients-container {
+      overflow-x: auto;
+    }
+    .clients-container > .row {
+      width: 133.33333333%; /* = 100% * 4/3 */
+    }
+  }
+
+.text-top {
+    position: relative;
+    text-align: center;
+}
+
+h4.nssf-text {
+    position: absolute;
+    /* margin-top:-180px; */
+    left: 30%;
+    color: #161831;
+    /* display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;*/
+} 
+
+h4.lasvegas-text {
+    position: absolute;
+    margin-top: -44px;
+    left: 40%;
+    color: #161831;
+    /* text-align: center; */
+    align-self: center;
+}
+
+h4.oval-text {
+    position: absolute;
+    margin-top: -25px;
+    left: 20%;
+    color: white;
+}

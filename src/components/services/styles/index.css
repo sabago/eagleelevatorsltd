@@ -1,0 +1,121 @@
+.services-home {
+    padding-bottom: 2rem;
+}
+p.services-home {
+    /* margin-top: 0; */
+    color: white !important;
+   /*position: absolute;
+   padding-left: 10rem;
+    padding-right: 10rem; */
+    /* opacity: 10%; */
+}
+.services-container {
+    background-color: rgba(256,256,256, 1);
+    padding: 2rem 0;
+    margin: 15px auto;
+    max-width: 100%;
+    background-color: #161831;
+    color: white;
+}
+
+.services-container h2 {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.services-container p {
+    color: white;
+    position: absolute;
+    top: 90px;
+    text-align: left;
+    padding-left: 40px;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+}
+#services-row {
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.services-col {
+    min-height: 1px;
+    padding: 0 10px;
+    position: relative;
+    min-width: 320px;
+    height: 360px;
+}
+
+
+
+.img-wrapper {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* min-width: 480px; */
+}
+
+.img-wrapper .arrow-right:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #161831;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+
+.component .center > div:nth-of-type(even) .img-wrapper.arrow-right:after {
+    border-right: 30px solid #fff;
+}
+
+.img-wrapper.arrow-left:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #161831;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+.icon-title {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 40px;
+    /* margin-right: 10px; */
+}
+
+#icon-title-left {
+    display: flex;
+    /* flex-wrap: nowrap;
+    position: absolute; */
+    padding-top:40px;
+    /* margin-left: 11rem; */
+    padding-bottom: 100px !important;
+}
+
+#repair-h2 {
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+#repair-p {
+    /* padding-right: 40px; */
+    text-align: right;
+    padding-top: 20px;
+}
+
+/* #installation-h1 {
+    margin-left: 10%;
+} */

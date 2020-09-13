@@ -1,0 +1,135 @@
+#introduction {
+    height: 100%;
+    background-image: url('https://res.cloudinary.com/sabago/image/upload/v1593823177/skyscraper-1542311_1920_rmzknh.jpg');
+    background-size: cover;
+    /* position: relative; */
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: flex-start; */
+    padding-top: 25rem;
+    padding-left: 2%;
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    padding-bottom: 20rem;
+}
+
+#introduction h1 {
+    font-weight: 400;
+    color: white;
+}
+
+#intro-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Nunito Sans';
+}
+
+#intro-h1 {
+    padding-left: 2%;
+}
+
+.main {
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    
+    background-color: rgba(256,256,256, 0.5);
+    position: absolute;
+    font-size: 20px;
+}
+
+#our-story {
+    min-width: 418px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    font-weight: 700;
+    font-family: 'Nunito Sans';
+    color: #800020;
+}
+.main p {
+    margin: 1% 2%;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    font-family: 'Nunito Sans';
+}
+
+#learnAbout {
+    background-color: #800020 !important;
+    color: white;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#intro-span {
+    color: #800020;
+}
+
+
+
+#container-wrap {
+    background-color: #161831;
+    min-width: 100%;
+    padding-bottom: 30px;
+}
+
+
+#satisfied-clients {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#current-projects {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    /* background-image: url('https://res.cloudinary.com/sabago/image/upload/v1593823177/skyscraper-1542311_1920_rmzknh.jpg'); */
+    background-color: rgba(256,256,256, 0.5);
+}
+.projects-row {
+    border-style: solid;
+    height: 100%;
+}
+
+#form-wrapper {
+    width: 100%;
+    background-color: #1d3750 ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#form-wrapper p, #form-wrapper h1 {
+    color: white;
+}
+
+*::-webkit-input-placeholder {
+    color: white !important;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: white !important;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: white !important;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white !important;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white !important;
+}
+*::placeholder {
+    /* modern browser */
+    color: white !important;
+}

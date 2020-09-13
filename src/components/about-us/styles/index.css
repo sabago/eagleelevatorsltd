@@ -1,0 +1,75 @@
+#about-container {
+    position: relative;
+    min-height: 300px;
+    max-height: 800px;
+    overflow: hidden;
+    /* margin-bottom: 500px; */
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+.video {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+  }
+
+  .mission {
+    position: absolute;
+    top: 0;
+    color:#f1f1f1;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .mission-content h1 {
+    color: #fff;
+    font-size: 5rem;
+    padding-top: 2rem
+}
+.mission-content h6 {
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 2rem
+}
+  /* .SubContent {
+    text-align: center;
+    padding: 10px;
+  } */
+
+#objective {
+    padding: 2% 8%;
+    background-color: #161831;
+    color: white;
+}
+#objective h3 {
+    font-size: 3rem;
+}
+#objective p {
+    font-size: 2rem;
+}
+
+#team {
+    background-color: #1d3750;
+    padding: 2% 6%;
+    color: white;
+}
+
+.team-img {
+    height:250px;
+    width: 250px;
+    border-style:solid;
+    border-color: white;
+    border-radius:50%;
+}
+
+#team p {
+    font-size: 1.5rem;
+}
+
+hr {
+    background-color: white;
+}
