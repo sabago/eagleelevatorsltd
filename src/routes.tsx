@@ -17,7 +17,7 @@ import { Contact } from "./components/contact-us";
 export default class Routes extends React.Component {
     render() {
         return (
-            <BrowserRouter basename="/">
+            // <BrowserRouter basename="/">
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/about-us" component={About} />
@@ -26,7 +26,7 @@ export default class Routes extends React.Component {
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact-us" component={Contact} />
                 </Switch>
-            </BrowserRouter>
+            // </BrowserRouter> 
         );
     }
 }
