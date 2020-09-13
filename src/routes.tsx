@@ -18,6 +18,8 @@ export default class Routes extends React.Component {
     render() {
         return (
             <Router basename={process.env.PUBLIC_URL}>
+                <Route render = {({ location }) => (
+                // <Layout location = { location }>
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/about-us" component={About} />
@@ -26,6 +28,8 @@ export default class Routes extends React.Component {
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact-us" component={Contact} />
                 </Switch>
+                //</Layout> 
+                 )} />
              </Router> 
         );
     }
