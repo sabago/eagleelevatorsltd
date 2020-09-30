@@ -7,11 +7,6 @@
     justify-content: center;
 }
 
-/* .contact-form p {
-    text-align: center;
-    font-weight: 500;
-} */
-
 button, input, input[type=text],input[type=email], select, textarea.form-control {
     border: 0;
     outline: 0;
@@ -28,27 +23,6 @@ textarea.form-control {
     /* padding-right: 16px; */
     /* margin-left: 34%; */
 }
-/* input[type=text],input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-} */
-/* input[type=submit]:hover {
-    background-color: #45a049;
-} */
 
 label {
     display: block;
@@ -89,13 +63,4 @@ button:active {
       box-shadow: inset 1px 1px 2px #161831, inset -1px -1px 2px #636375;
     }
 
-/* button.submit-button {
-    color:#161831;
-    margin-top: 100px;
-} */
-/* .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-} */
 

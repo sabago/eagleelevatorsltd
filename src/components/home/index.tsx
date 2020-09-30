@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {useState} from 'react';
 
 import './styles/index.css';
 import { Button } from 'react-bootstrap';
@@ -12,7 +11,6 @@ import { Contact } from '../contact-us';
 
   
 export class Home extends React.Component {
-    
     render() {
         return (
             <div>
@@ -38,7 +36,7 @@ export class Home extends React.Component {
                             </a>                   
                         </p> 
                     </div>
-                    <div id="container-wrap">   
+                    <div id="services">   
                         <Services/>
                     </div>  
                    
@@ -50,8 +48,7 @@ export class Home extends React.Component {
                                 backgroundSize: "cover",
                                 backgroundAttachment: "fixed",
                                 backgroundRepeat: "norepeat"}}>
-                    <div id="current-projects">
-                        
+                    <div id="current-projects">                        
                         <h1> Current Projects</h1>
                         <p> Projects that we are currently working on</p>
                         <Container fluid className="projects-container">
@@ -64,28 +61,16 @@ export class Home extends React.Component {
                                         </Col>
                                         <Col xs={6} sm={6} md={6} lg={6} xl={6}>
                                             <h3> Locations</h3>
-                                            <p>
+                                            <span>
                                                 <ol>
                                                     <li>One (1) Fuji 8 passenger lift @MBALE COURT VIEW HOTEL</li>
                                                     <li>One (1) Fuji 8 passenger lift @HADJI SSEMPIJA APARTMENT, MUYENGA</li>
                                                     <li>One (1) Fuji 21 passenger lift @SUNRISE MULTIPLE HOLDINGS, KAMWOKYA</li>
                                                 </ol>
-                                            </p>
+                                            </span>
                                         </Col>
                                     </Row>
                                 </Col>
-                                {/* <Col xs={12} sm={12} md={12} lg={12} xl={6}>
-                                    <Row noGutters={true} className="projects-row">
-                                        <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                                            <h3> Project Two </h3>
-                                            <p>Supply, installation and commissioning of one .</p>
-                                        </Col>
-                                        <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                                            <h3> Location</h3>
-                                            <p>SUNRISE MULTIPLE HOLDINGS, KAMWOKYA</p>
-                                        </Col>
-                                    </Row>
-                                </Col> */}
                                 <Col xs={12} sm={12} md={12} lg={12} xl={6}>
                                     <Row noGutters={true} className="projects-row">
                                         <Col xs={6} sm={6} md={6} lg={6} xl={6}>
@@ -94,7 +79,7 @@ export class Home extends React.Component {
                                         </Col>
                                         <Col xs={6} sm={6} md={6} lg={6} xl={6}>
                                             <h3> Locations</h3>
-                                            <p>
+                                            <span>
                                                 <ol>
                                                     <li>
                                                         Two (2) Fuji lift passenger lifts each 8 persons @UGANDA COMMUNICATIONS COMMISSION
@@ -103,7 +88,7 @@ export class Home extends React.Component {
                                                         One (1) Fuji 8 person lift @NATIONAL COUNCIL FOR HIGHER EDUCTAION
                                                     </li>
                                                 </ol>
-                                            </p>
+                                            </span>
                                         </Col>
                                     </Row>   
                                 </Col>
@@ -111,7 +96,7 @@ export class Home extends React.Component {
                         </Container>
                         </div>
                     </div>
-                    <div id="form-wrapper">
+                    <div id="contact-us">
                         <Contact />
                     </div>
                     <Footer />

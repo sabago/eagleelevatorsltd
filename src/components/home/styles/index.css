@@ -72,12 +72,11 @@
     color: #800020;
 }
 
-
-
-#container-wrap {
+#services{
     background-color: #161831;
     min-width: 100%;
     padding-bottom: 30px;
+    
 }
 
 
@@ -97,14 +96,14 @@
     height: 100%;
 }
 
-#form-wrapper {
+#contact-us {
     width: 100%;
     background-color: #1d3750 ;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#form-wrapper p, #form-wrapper h1 {
+#contact-us p, #contact-us h1 {
     color: white;
 }
 

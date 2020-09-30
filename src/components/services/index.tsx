@@ -14,13 +14,20 @@ export class Services extends React.Component {
             <Col className="services-col" xs={12} sm={12} md={6} >
                 <div className="img-wrapper arrow-right">
                     <div className="img-wrapper arrow-right">
-                        <img src="https://res.cloudinary.com/sabago/image/upload/v1598206080/elevator-new_qn4sqr.jpg" width="100%" height="auto"></img>
+                        <img 
+                            alt="skyscrapper"
+                            width="100%" height="auto"
+                            src="https://res.cloudinary.com/sabago/image/upload/v1598206080/elevator-new_qn4sqr.jpg">
+                        </img>
                     </div>
                 </div>
             </Col>
             <Col className="services-col" xs={12} sm={12}  md={6}>
                 <span className="icon-title">
-                    <img src="https://res.cloudinary.com/sabago/image/upload/c_scale,h_48,w_48/v1598550138/installation_icon_nfinuy.png"></img>
+                    <img 
+                        alt="installation icon"
+                        src="https://res.cloudinary.com/sabago/image/upload/c_scale,h_48,w_48/v1598550138/installation_icon_nfinuy.png">
+                    </img>
                     <h2 id="installation-h1"> Installation </h2>
                 </span>
                 <p>
@@ -35,7 +42,11 @@ export class Services extends React.Component {
         <Row id="services-row">
             <Col className="services-col" xs={12} sm={12}  md={6} style={{height:"450px"}}>
             <span id="icon-title-left" style={{float: "right"}}>
-            <h2 id="repair-h2"> Maintain & Repair</h2><img src="https://res.cloudinary.com/sabago/image/upload/c_scale,w_48/v1598552288/elevator-repair-icon_uwx8p8.png"></img>
+            <h2 id="repair-h2"> Maintain & Repair</h2>
+            <img 
+                alt="repair icon"
+                src="https://res.cloudinary.com/sabago/image/upload/c_scale,w_48/v1598552288/elevator-repair-icon_uwx8p8.png">
+            </img>
                 
             </span>
                 <p id="repair-p">
@@ -49,7 +60,11 @@ export class Services extends React.Component {
             <Col className="services-col" xs={12} sm={12} md={6}>
                 <div className="img-wrapper arrow-left">
                     <div className="img-wrapper arrow-left">
-                        <img src="https://res.cloudinary.com/sabago/image/upload/c_scale,w_600/v1598208507/elevator-1207810_1920_o0b3rx.jpg" width="100%" height="auto"></img>
+                        <img 
+                            alt="elevator help button"
+                            width="100%" height="auto"
+                            src="https://res.cloudinary.com/sabago/image/upload/c_scale,w_600/v1598208507/elevator-1207810_1920_o0b3rx.jpg">
+                        </img>
                     </div>
                 </div>
             </Col>
@@ -59,13 +74,20 @@ export class Services extends React.Component {
             <Col className="services-col" xs={12} sm={12} md={6}>
                 <div className="img-wrapper arrow-right">
                     <div className="img-wrapper arrow-right">
-                        <img src="https://res.cloudinary.com/sabago/image/upload/v1598219898/escalator-mordern_eubgo4.jpg" width="100%" height="auto"></img>
+                        <img 
+                            alt="horizontal escalator"
+                            width="100%" height="auto"
+                            src="https://res.cloudinary.com/sabago/image/upload/v1598219898/escalator-mordern_eubgo4.jpg">
+                        </img>
                     </div>
                 </div>
             </Col>
             <Col className="services-col" xs={12} sm={12} md={6}>
                 <span className="icon-title">
-                    <img src= "https://res.cloudinary.com/sabago/image/upload/c_scale,w_48/v1598551841/elevator-xxl_jpdk6j.png"></img>
+                    <img 
+                        alt="up down icon"
+                        src= "https://res.cloudinary.com/sabago/image/upload/c_scale,w_48/v1598551841/elevator-xxl_jpdk6j.png">                            
+                    </img>
                     <h2> Mordenize & Customize</h2>
                 </span> 
                 <p style={{paddingTop:"13px", paddingBottom:"13px"}}>

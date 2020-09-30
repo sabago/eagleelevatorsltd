@@ -3,7 +3,6 @@ import * as React from 'react';
 
 import './styles/index.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Services } from '../services/index';
 
 export class Footer extends React.Component {
     render() {
@@ -15,7 +14,7 @@ export class Footer extends React.Component {
                     </h2></span>
                     <Row >
                         <Col xs={1} sm={1} md={1} lg={1} xl={1} style={{paddingRight:0, paddingLeft:0}}>
-                            <p style={{ color: "white", writingMode: "vertical-rl", textOrientation: "mixed"}}><a href="http://localhost:3000/#container-wrap">
+                            <p style={{ color: "white", writingMode: "vertical-rl", textOrientation: "mixed"}}><a href="/#services">
                                 Services
                             </a></p>
                         </Col>

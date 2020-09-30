@@ -11,30 +11,45 @@ export class Clients extends React.Component {
                         <Container fluid className="clients-container">
                             <Row noGutters={true} className="clients-row">
                                 <Col className="clients-col" xs={12} sm={4} md={4} lg={2}>
-                                    <img src="https://res.cloudinary.com/sabago/image/upload/v1599745490/eureka_fa5qnh.png"></img>
+                                    <img
+                                        alt="eureka hotel" 
+                                        src="https://res.cloudinary.com/sabago/image/upload/v1599745490/eureka_fa5qnh.png">
+                                    </img>
                                 </Col>
                                 <Col className="clients-col" xs={12} sm={4} md={4} lg={2}>
                                     <div className="text-top">
                                         <h4 className="nssf-text">NSSF Building</h4>
-                                        <img src="https://res.cloudinary.com/sabago/image/upload/v1599749310/nssf-mbarara_mi2mcv.jpg"></img>
+                                        <img 
+                                            alt="NSSF Building Mbarara"
+                                            src="https://res.cloudinary.com/sabago/image/upload/v1599749310/nssf-mbarara_mi2mcv.jpg">
+                                        </img>
                                         <h4 className="lasvegas-text" style={{color: "#ffffff"}}>Mbarara</h4>
                                     </div>
                                 </Col>
                                 <Col className="clients-col" xs={12} sm={4} md={4} lg={2}>
                                     <div className="text-top">
-                                        <img src="https://res.cloudinary.com/sabago/image/upload/v1599745568/las_vegas_building_daaraz.png"></img>
+                                        <img 
+                                            alt="Las Vegas garden hotel, Bunga"
+                                            src="https://res.cloudinary.com/sabago/image/upload/v1599745568/las_vegas_building_daaraz.png">
+                                        </img>
                                         <h4 className="lasvegas-text"> Bunga</h4>
                                     </div>
                                 </Col>
                                 <Col className="clients-col" xs={12} sm={4} md={4} lg={2}>
                                     <div className="text-top">
-                                        <img src="https://res.cloudinary.com/sabago/image/upload/v1599746111/oval_plaza_mbale_ebmj41.jpg"></img>
+                                        <img 
+                                            alt="Oval Plaza, Mbale"
+                                            src="https://res.cloudinary.com/sabago/image/upload/v1599746111/oval_plaza_mbale_ebmj41.jpg">
+                                        </img>
                                         <h4 className="oval-text">Oval Plaza, Mbale</h4>
                                     </div>
                                 </Col>
                                 <Col className="clients-col" xs={12} sm={4} md={4} lg={2}>
                                     <h4>Soroti University</h4>
-                                    <img src="https://res.cloudinary.com/sabago/image/upload/c_scale,w_130/v1599745756/soroti_uni_gheetv.jpg"></img>
+                                    <img 
+                                        alt="Soroti University"
+                                        src="https://res.cloudinary.com/sabago/image/upload/c_scale,w_130/v1599745756/soroti_uni_gheetv.jpg">
+                                    </img>
                                     <h4>Multipurpose Building</h4>
                                 </Col>
                                 <Col className="clients-col" xs={12} sm={4} md={4} lg={2}>

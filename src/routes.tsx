@@ -1,25 +1,21 @@
 import * as React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import { withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./scrollTop";
 
-// import About from "./About/About";
-// import Contact from "./Contact/Contact";
-// import Products from "./Product/Products";
 import { Home } from "./components/home";
-import history from './history';
-import App from "./App";
 import { About } from "./components/about-us";
 import { Services } from "./components/services";
 import { Clients } from "./components/clients";
 import { Projects } from "./components/projects";
 import { Contact } from "./components/contact-us";
+import { Navigation } from "./components/navigation";
 
 export default class Routes extends React.Component {
     render() {
         return (
             <Router basename={process.env.PUBLIC_URL}>
-                <Route render = {({ location }) => (
-                // <Layout location = { location }>
+                <ScrollToTop>
+                <Navigation/>
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/about-us" component={About} />
@@ -28,9 +24,9 @@ export default class Routes extends React.Component {
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact-us" component={Contact} />
                 </Switch>
-                //</Layout> 
-                 )} />
+                </ScrollToTop>
              </Router> 
         );
     }
 }
+

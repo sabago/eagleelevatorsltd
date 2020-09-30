@@ -11,15 +11,12 @@
     overflow-x: auto;  
     white-space: nowrap; 
     padding-bottom: 10px;
-    
-    /* color: black; */
 }
 
 .clients-col {
     display: inline-block;
     float: none;
     min-width: 355px;
-    /* color: black; */
 }
 
 @media (min-width: 900px) {
@@ -39,13 +36,8 @@
 
 h4.nssf-text {
     position: absolute;
-    /* margin-top:-180px; */
     left: 30%;
     color: #161831;
-    /* display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;*/
 } 
 
 h4.lasvegas-text {
@@ -53,7 +45,6 @@ h4.lasvegas-text {
     margin-top: -44px;
     left: 40%;
     color: #161831;
-    /* text-align: center; */
     align-self: center;
 }
 

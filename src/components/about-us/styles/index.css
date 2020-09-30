@@ -1,19 +1,19 @@
 #about-container {
     position: relative;
     min-height: 300px;
-    max-height: 800px;
+    max-height: 1000px;
     overflow: hidden;
-    /* margin-bottom: 500px; */
+    padding-top: 100px;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
 .video {
     width: 100%;
     height: 100%;
-    /* object-fit: contain; */
+    object-fit: contain;
   }
 
-  .mission {
+.mission {
     position: absolute;
     top: 0;
     color:#f1f1f1;
@@ -23,9 +23,74 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding-top: 8rem;
+}
+
+@media(max-width: 1200px) {
+    .mission {
+      padding-top: 10rem;
+      padding-bottom: 180px;
+      height: 1000px;
+    }
+    .mission > .mission-content h1{
+      padding-top: 1rem;
+      font-size: 4rem;
+      padding-bottom: 10rem;
+    }
+    .mission > .mission-content h6{
+        padding-top: 1rem;
+    }
   }
-  .mission-content h1 {
+
+@media(max-width: 1000px) {
+/*was at 992px*/
+    .mission {
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+        height: 1000px;
+    }
+    .mission > .mission-content h1{
+        padding-top: 1rem;
+        font-size: 3rem;
+        padding-bottom: 100px;
+    }
+    .mission > .mission-content h6{
+        padding-top: 1rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .mission {
+        padding-top: 1rem;
+        height: 820px;
+    }   
+    .mission > .mission-content h1{
+        padding-top: 1rem;
+        font-size: 2rem;
+        padding-bottom: 8.5rem;
+    }
+    .mission > .mission-content h6{
+        padding-top: 0;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .mission {
+        padding-top: 1rem;
+        height: 640px;
+    }   
+    .mission > .mission-content h1{
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+        padding-bottom: 10rem;
+    }
+    .mission > .mission-content h6{
+        padding-top: 6rem;
+        font-size: 0.8rem;      
+    }
+}
+.mission-content h1 {
     color: #fff;
     font-size: 5rem;
     padding-top: 2rem
@@ -35,10 +100,6 @@
     font-size: 2rem;
     padding-top: 2rem
 }
-  /* .SubContent {
-    text-align: center;
-    padding: 10px;
-  } */
 
 #objective {
     padding: 2% 8%;
@@ -66,7 +127,7 @@
     border-radius:50%;
 }
 
-#team p {
+#team span {
     font-size: 1.5rem;
 }
 
