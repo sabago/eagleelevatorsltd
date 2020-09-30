@@ -8,7 +8,7 @@ import { Services } from '../services';
 import { Clients } from '../clients';
 import { Contact } from '../contact-us';
 
-
+console.log("home");
   
 export class Home extends React.Component {
     render() {
