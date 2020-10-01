@@ -10,8 +10,6 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import { HashRouter as Router } from 'react-router-dom';
 
-<link rel="stylesheet" href="./style/style.css" type="text/css"></link>
-
 // let express = require('express');
 // let router = express.Router();
 // let nodemailer = require('nodemailer');
