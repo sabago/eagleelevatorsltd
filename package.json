@@ -2,7 +2,6 @@
   "name": "eagleelavators",
   "version": "0.1.0",
   "private": true,
-  "homepage": "www.eagleelevators.ltd",
   "engines": {
     "node": "12.x"
   },
