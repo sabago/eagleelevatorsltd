@@ -2,6 +2,7 @@
   "name": "eagleelavators",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/",
   "engines": {
     "node": "12.x"
   },
