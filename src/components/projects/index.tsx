@@ -179,7 +179,7 @@ export class Projects extends React.Component {
                 <VerticalTimelineElement
                     dateClassName="project-date"
                     date="2017: Inception"
-                    iconStyle={{ background: 'rgb(29, 55, 80)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(120, 0, 32)', color: '#fff' }}
                     // icon={<StarIcon />}
                 />
                 </VerticalTimeline>
