@@ -8,7 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
+// import 'src/components/services/styles/index.css';
+// import 'src/components/contact-us/styles/index.css';
 
 // let express = require('express');
 // let router = express.Router();

@@ -13,7 +13,7 @@ p.services-home {
     background-color: rgba(256,256,256, 1);
     padding: 2rem 0;
     margin: 15px auto;
-    max-width: 100%;
+    max-width: 1240px;
     background-color: #161831;
     color: white;
 }
@@ -34,6 +34,7 @@ p.services-home {
     margin-bottom: 5rem;
     padding-bottom: 5rem;
 }
+
 #services-row {
     width: auto;
     max-width: 100%;
@@ -119,3 +120,7 @@ p.services-home {
 /* #installation-h1 {
     margin-left: 10%;
 } */
+
+.modern-escalator {
+    padding-left: 100px;
+}

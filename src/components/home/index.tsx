@@ -1,8 +1,6 @@
 import * as React from 'react';
 
 import './styles/index.css';
-import '../services/styles/index.css';
-import '../contact-us/styles/index.css';
 import { Button } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Footer } from '../footer';

@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 800px;
 }
 
 button, input, input[type=text],input[type=email], select, textarea.form-control {
@@ -14,6 +15,7 @@ button, input, input[type=text],input[type=email], select, textarea.form-control
     border-radius: 220px;
     padding: 16px;
     background-color:#1d3750 ;
+    width: 600px;
     /* text-shadow: 1px 1px 0 #000; */
   }
 
