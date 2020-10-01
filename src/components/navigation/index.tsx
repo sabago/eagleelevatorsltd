@@ -10,7 +10,7 @@ import './styles/index.css';
 export class Navigation extends React.Component {
     scrollWithOffset = (el: any ) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-        const yOffset = -120; 
+        const yOffset = -100; 
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     }
     
