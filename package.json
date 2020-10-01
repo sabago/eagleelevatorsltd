@@ -2,7 +2,7 @@
   "name": "eagleelavators",
   "version": "0.1.0",
   "private": true,
-  "homepage": "www.eagleelevators.ltd",
+  "homepage": "eagleelevators.ltd",
   "engines": {
     "node": "12.x"
   },
@@ -34,11 +34,12 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "postinstall": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
