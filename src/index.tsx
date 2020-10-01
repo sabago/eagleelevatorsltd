@@ -10,11 +10,11 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import { HashRouter as Router } from 'react-router-dom';
 
-// let express = require('express');
-// let router = express.Router();
-// let nodemailer = require('nodemailer');
-// let cors = require('cors');
-// const creds = require('./config');
+let express = require('express');
+let router = express.Router();
+let nodemailer = require('nodemailer');
+let cors = require('cors');
+const creds = require('./config');
 
 // let transport = {
 //     host: 'smtp.example.com', // Don’t forget to replace with the SMTP host of your provider
@@ -61,11 +61,12 @@ import { HashRouter as Router } from 'react-router-dom';
 //   })
 // })
 
-// const app = express()
-// app.use(cors())
+const app = express()
+app.use(cors())
 // app.use(express.json())
-// app.use('/', router)
-// app.listen(3000)
+app.use(express.static(__dirname + '/client/build'))
+app.use('/', router)
+app.listen(3000)
 
 ReactDOM.render(
   <Router basename={process.env.PUBLIC_URL}>
