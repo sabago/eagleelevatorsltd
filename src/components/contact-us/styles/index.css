@@ -45,7 +45,7 @@ input:focus, textarea:focus {
     box-shadow:  inset 1px 1px 2px #161831, inset -1px -1px 2px #636375;
 }
 
-button {
+input[type=submit]{
     color:#61677C;
     font-weight: bold;
     box-shadow: -5px -5px 20px #636375,  5px 5px 20px #161831;
@@ -57,11 +57,11 @@ button {
     color: white;
 }   
 
-button:hover {
+input[type=submit]:hover {
       box-shadow: -2px -2px 5px #636375, 2px 2px 5px #161831;
 }
     
-button:active {
+input[type=submit]:active {
       box-shadow: inset 1px 1px 2px #161831, inset -1px -1px 2px #636375;
     }
 

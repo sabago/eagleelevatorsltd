@@ -23,7 +23,7 @@ export class Home extends React.Component {
                         <h1>Our Story</h1>
                         <p>
                             Established in 1998 (as MM Building Services Ltd), we have installed and serviced 
-                            more than 300 elevators for all types of commercial buildings in East Africa.
+                            more than 100 elevators for all types of commercial buildings in East Africa.
                             Eagle Elevators Limited was founded on simple principles that we strongly value. We provide 
                             the best quality and cost effective lift/elevator installations, maintenance and repair 
                             solutions with quality & reliable service. We offer unmatched expertise in a friendly yet 

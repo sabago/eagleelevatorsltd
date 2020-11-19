@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 import './styles/index.css';
 
@@ -7,92 +9,173 @@ interface IState {
     email: string,
     message: string
   }
+export function Contact() {
+  const [state , setState] = useState({
+    name:"",
+    email:"",
+    message:""
+  });
+  const [formErrors, setFormErrors] = useState({
+      name: "",
+      email: "",
+      message: "",
+  });
 
-export class Contact extends React.Component<{} , IState> {
-    // const [name: string, setName: any] = useState(""): any;
-    constructor(props: any) {
-        super(props);
-        this.state = {
-          name: '',
-          email: '',
-          message: ''
+  const [errors, setErrors] = useState(false);
+  //Email validation
+  const emailRegex = RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+  // Form validation
+  const formValid = ( formErrors: any, state: any ) => {
+    let valid = true;
+    // Validate form errors being empty
+    Object.values(formErrors).forEach((val: any) => {
+      val.length > 0 && (valid = false);
+    });
+      // Validate the form was filled out
+    if(state.name.length <=3) {
+      valid = false;
+      formErrors.name = "Name must be at least 3 letters long";
+    }
+    if(typeof state.name !== "undefined"){
+      if(!state.name.match(/^[a-zA-Z\d\s]+$/)){
+        valid = false;
+        formErrors.name = "Only letters allowed for name";
+      }  
+    }
+
+    //Email
+    if(state.email.length===0){
+      valid = false;
+      formErrors["email"] = "Email cannot be empty";
+    }
+    if(typeof state.email !== "undefined"){
+      if(!emailRegex.test(String(state.email).toLowerCase())){
+          valid = false;
+          formErrors["email"] = "Email is not valid";
         }
-      }
+    }  
 
-    onNameChange(event: any) {
-    this.setState({name: event.target.value})
+    if(state.message.length <=10) {
+      valid = false;
+      formErrors.message = "Message must be at least 10 characters long";
+    }     
+    setFormErrors(formErrors);
+    setErrors(true);  
+    return valid;
+  };
+
+  const handleSubmit = (evt: any) => {
+    evt.preventDefault();  
+    if (formValid(formErrors,state)) {
+      // Set template params
+      let templateParams = {
+        name: state.name,
+        email: state.email,
+        message: state.message,
+      };
+
+      emailjs.send('service_30f5c7q', 'template_using2k', templateParams, 'user_APS0jjpht0JU7xXswZBcM');
+
+      console.log(`
+        --SUBMITTING--
+        Name: ${state.name}
+        Email: ${state.email}
+        Message: ${state.message}
+      `);
+
+      resetForm();
+    } else {
+      // Handle form validation failure
+      console.error('FORM INVALID - DISPLAY ERROR MESSAGE');
+      console.log(formErrors);
     }
+  };
 
-    onEmailChange(event: any) {
-    this.setState({email: event.target.value})
-    }
+  // Function to reset form
+  const resetForm = () => {
+    setState({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
 
-    onMessageChange(event: any) {
-    this.setState({message: event.target.value})
-    }
-    
-    handleSubmit(event: any) {
-        event.preventDefault();
+  const resetErrors = () => {
+    setFormErrors({
+      name: '',
+      email: '',
+      message: ''
+    });
+  }
 
-    fetch('http://localhost:3000/send',{
-        method: "POST",
-        body: JSON.stringify(this.state),
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      }).then(
-    	(response) => (response.json())
-       ).then((response)=>{
-      if (response.status === 'success'){
-        alert("Message Sent."); 
-        this.resetForm()
-      }else if(response.status === 'fail'){
-        alert("Message failed to send.")
-      }
-    })
-    }
-
-    resetForm(){
-        this.setState({name: "", email: "", message: ""})
-     }
-
-    render() {
-        return (
-            <>
-            <h1>Contact Us</h1>
-                        <p>For business inquiries, please call: 0703616864<br/>
-                           For engineering needs, call: 0772653001<br/>
-                           For all other inquiries, please call: 0414662804 <br />
-                           Or leave us a note below. We would love to hear from you!
-                        </p>
-                        <div className="contact-form">
-                            <form onSubmit={this.handleSubmit.bind(this)} method="POST">
-                                <label htmlFor="fname">
-                                    <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} placeholder="Name"/>
-                                </label>
-                                {/* <input type="text" id="fname" name="firstname" placeholder="First Name" onChange={this.onNameChange.bind(this)}/> */}
-                                {/* <label htmlFor="lname">Last Name</label>
-                                <input type="text" id="lname" name="lastname" placeholder="Last Name"/> */}
-                                <label htmlFor="email">
-                                {/* <input type="email" id="email" name="email" placeholder="Your email"/> */}
-                                    <input type="email" 
-                                        className="form-control" 
-                                        aria-describedby="emailHelp" 
-                                        value={this.state.email} 
-                                        onChange={this.onEmailChange.bind(this)} 
-                                        placeholder="Email"/>
-                                </label>
-                                <label htmlFor="message">
-                                {/* <textarea id="subject" placeholder="Please enter your message here"></textarea> */}
-                                    <textarea className="form-control" rows={10} value={this.state.message} onChange={this.onMessageChange.bind(this)} placeholder="Message"/>
-                                </label>
-                                {/* <input type="submit" value="Submit"></input> */}
-                                <label>
-                                    <button className="submit-button" type="button"> Submit</button>
-                                </label>
-                            </form>
-                        </div>
-            </>
-        );}
+  const handleChange = (evt:any) => {
+    evt.preventDefault();
+    resetErrors();
+    const value = evt.target.value;
+    setState({
+      ...state,
+      [evt.target.name]: value
+    });
+    setErrors(false);
+  };
+  
+  return (
+    <>
+      <h1>
+        Contact Us
+      </h1>
+      <p>
+        For business inquiries, please call: 0703616864<br/>
+        For engineering needs, call: 0772653001<br/>
+        For all other inquiries, please call: 0414662804 <br />
+        Or leave us a note below. We would love to hear from you!
+      </p>
+      <div className="contact-form">
+        <form onSubmit={handleSubmit} method="POST">
+          <div>
+            <input
+              type="text"
+              name="name"
+              value={state.name}
+              className={`form-control formInput ${formErrors.name.length > 0 ? 'error' : null}`}
+              onChange={handleChange}
+              placeholder='Name'
+              autoComplete="name"
+              ></input>
+            {formErrors.name.length > 0 && (
+              <span className='errorMessage'>{formErrors.name}</span>
+            )}
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              value={state.email}
+              className={`form-control formInput ${formErrors.email.length > 0 ? 'error' : null}`}
+              onChange={handleChange}
+              placeholder='Email'
+              autoComplete="email"
+            ></input>
+            {formErrors.email.length > 0 && (
+              <span className='errorMessage'>{formErrors.email}</span>
+            )}
+          </div> 
+          <div>
+            <textarea 
+              rows={10} 
+              name="message" 
+              value={state.message} 
+              className={`form-control formInput ${formErrors.message.length > 0 ? 'error' : null
+              }`}
+              placeholder="Message" 
+              onChange={handleChange}/>
+                {errors && formErrors.message.length > 0 && (
+                <span className='errorMessage'>{formErrors.message}</span>
+                )}
+          </div>  
+          <input type="submit" className="submit-button"/>                                                  
+        </form> 
+      </div>
+    </>
+  );
 }
